@@ -62,21 +62,6 @@ class button_icon(QMainWindow, Ui_icon_window):
     def dropEvent(self, event):
         if event.mimeData().hasText():
             text = event.mimeData().text()
-
-            # if 'file:///' in text:
-            #     file_path = text.replace('file:///', '')
-            #     if os.path.exists(file_path) and os.path.isfile(file_path):
-            #         print('file', file_path)
-            #     elif os.path.exists(file_path) and os.path.isdir(file_path):
-            #         print('dir', file_path)
-            #     elif os.path.exists(file_path) and os.path.islink(file_path):
-            #         print('link', file_path)
-            #     else:
-            #         print('not found')
-            # elif 'http' in text:
-            #     print('link', text)
-            # else:
-            #     print('not found')
             file_path = text.replace('file:///', '')
             self.drag_drop_signal.emit(file_path)
 
