@@ -215,23 +215,5 @@ class main():
 
 
 if __name__ =='__main__':
-    # # Create the tray
-    # tray = QSystemTrayIcon()
-    # tray.setIcon(QIcon('icon/icon.png'))
-    # tray.setVisible(True)
-
     app = main()
-    # tray.setToolTip(tooltip)
-
-    # # Create the menu
-    # menu = QMenu()
-    # action1 = QAction("關閉程式")
-    # action1.triggered.connect(app.exit)
-    # menu.addAction(action1)
-
-    # # Add the menu to the tray
-    # tray.setContextMenu(menu)
-    
-    # myWin = MainWindow(int(main_size))
-    # myWin.show()
     
